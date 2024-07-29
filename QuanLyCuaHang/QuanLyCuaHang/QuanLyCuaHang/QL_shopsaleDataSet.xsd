@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="QL_shopsaleDataSet" targetNamespace="http://tempuri.org/QL_shopsaleDataSet.xsd" xmlns:mstns="http://tempuri.org/QL_shopsaleDataSet.xsd" xmlns="http://tempuri.org/QL_shopsaleDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection ConnectionStringObject="Data Source=TRANDINHBIEN;Initial Catalog=QL_shopsale;Integrated Security=True" IsAppSettingsProperty="false" Modifier="Assembly" Name="trandinhbien.QL_shopsale.dbo" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="View_PhieuSanPhamTableAdapter" GeneratorDataComponentClassName="View_PhieuSanPhamTableAdapter" Name="View_PhieuSanPham" UserDataComponentName="View_PhieuSanPhamTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="trandinhbien.QL_shopsale.dbo" DbObjectName="QL_shopsale.dbo.View_PhieuSanPham" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT MaHang, TenHang, Manc, SoLuong, DonGiaNhap, DonGiaBan, MaLoai, TongTienNhaphang FROM dbo.View_PhieuSanPham</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="MaHang" DataSetColumn="MaHang" />
+              <Mapping SourceColumn="TenHang" DataSetColumn="TenHang" />
+              <Mapping SourceColumn="Manc" DataSetColumn="Manc" />
+              <Mapping SourceColumn="SoLuong" DataSetColumn="SoLuong" />
+              <Mapping SourceColumn="DonGiaNhap" DataSetColumn="DonGiaNhap" />
+              <Mapping SourceColumn="DonGiaBan" DataSetColumn="DonGiaBan" />
+              <Mapping SourceColumn="MaLoai" DataSetColumn="MaLoai" />
+              <Mapping SourceColumn="TongTienNhaphang" DataSetColumn="TongTienNhaphang" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="QL_shopsaleDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="QL_shopsaleDataSet" msprop:Generator_DataSetName="QL_shopsaleDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="View_PhieuSanPham" msprop:Generator_RowEvHandlerName="View_PhieuSanPhamRowChangeEventHandler" msprop:Generator_RowDeletedName="View_PhieuSanPhamRowDeleted" msprop:Generator_RowDeletingName="View_PhieuSanPhamRowDeleting" msprop:Generator_RowEvArgName="View_PhieuSanPhamRowChangeEvent" msprop:Generator_TablePropName="View_PhieuSanPham" msprop:Generator_RowChangedName="View_PhieuSanPhamRowChanged" msprop:Generator_RowChangingName="View_PhieuSanPhamRowChanging" msprop:Generator_TableClassName="View_PhieuSanPhamDataTable" msprop:Generator_RowClassName="View_PhieuSanPhamRow" msprop:Generator_TableVarName="tableView_PhieuSanPham" msprop:Generator_UserTableName="View_PhieuSanPham">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MaHang" msprop:Generator_ColumnPropNameInRow="MaHang" msprop:Generator_ColumnPropNameInTable="MaHangColumn" msprop:Generator_ColumnVarNameInTable="columnMaHang" msprop:Generator_UserColumnName="MaHang">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TenHang" msprop:Generator_ColumnPropNameInRow="TenHang" msprop:Generator_ColumnPropNameInTable="TenHangColumn" msprop:Generator_ColumnVarNameInTable="columnTenHang" msprop:Generator_UserColumnName="TenHang">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Manc" msprop:Generator_ColumnPropNameInRow="Manc" msprop:Generator_ColumnPropNameInTable="MancColumn" msprop:Generator_ColumnVarNameInTable="columnManc" msprop:Generator_UserColumnName="Manc">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SoLuong" msprop:Generator_ColumnPropNameInRow="SoLuong" msprop:Generator_ColumnPropNameInTable="SoLuongColumn" msprop:Generator_ColumnVarNameInTable="columnSoLuong" msprop:Generator_UserColumnName="SoLuong" type="xs:double" />
+              <xs:element name="DonGiaNhap" msprop:Generator_ColumnPropNameInRow="DonGiaNhap" msprop:Generator_ColumnPropNameInTable="DonGiaNhapColumn" msprop:Generator_ColumnVarNameInTable="columnDonGiaNhap" msprop:Generator_UserColumnName="DonGiaNhap" type="xs:double" />
+              <xs:element name="DonGiaBan" msprop:Generator_ColumnPropNameInRow="DonGiaBan" msprop:Generator_ColumnPropNameInTable="DonGiaBanColumn" msprop:Generator_ColumnVarNameInTable="columnDonGiaBan" msprop:Generator_UserColumnName="DonGiaBan" type="xs:double" />
+              <xs:element name="MaLoai" msprop:Generator_ColumnPropNameInRow="MaLoai" msprop:Generator_ColumnPropNameInTable="MaLoaiColumn" msprop:Generator_ColumnVarNameInTable="columnMaLoai" msprop:Generator_UserColumnName="MaLoai">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TongTienNhaphang" msprop:Generator_ColumnPropNameInRow="TongTienNhaphang" msprop:Generator_ColumnPropNameInTable="TongTienNhaphangColumn" msprop:Generator_ColumnVarNameInTable="columnTongTienNhaphang" msprop:Generator_UserColumnName="TongTienNhaphang" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:View_PhieuSanPham" />
+      <xs:field xpath="mstns:MaHang" />
+      <xs:field xpath="mstns:Manc" />
+      <xs:field xpath="mstns:MaLoai" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
